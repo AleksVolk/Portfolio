@@ -525,6 +525,7 @@ body {
 @media (max-width: 35.9375em) {
   .slider-hero__body {
     padding-left: 5vw;
+    padding-right: 7vw;
   }
 }
 

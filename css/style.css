@@ -241,10 +241,6 @@ body {
   left: 2vw;
 }
 
-.hero__name {
-  line-height: 1.2;
-}
-
 @supports (font-size: clamp( 1.125rem , 0.6704545455rem  +  2.2727272727vw , 2.375rem )) {
   .hero__name {
     font-size: clamp( 1.125rem , 0.6704545455rem  +  2.2727272727vw , 2.375rem );
@@ -258,7 +254,7 @@ body {
 }
 
 .hero__name:not(:last-child) {
-  margin-bottom: 0.5263157895em;
+  margin-bottom: 0.2631578947em;
 }
 
 .hero__name span {
@@ -298,7 +294,7 @@ body {
 
 .hero__contact {
   position: absolute;
-  bottom: 2.5vh;
+  bottom: 3vh;
   left: 2vw;
 }
 
@@ -318,15 +314,15 @@ body {
   margin-bottom: 0.4736842105em;
 }
 
-@supports (font-size: clamp( 0.875rem , 0.7386363636rem  +  0.6818181818vw , 1.25rem )) {
+@supports (font-size: clamp( 0.75rem , 0.5681818182rem  +  0.9090909091vw , 1.25rem )) {
   .hero__contact p {
-    font-size: clamp( 0.875rem , 0.7386363636rem  +  0.6818181818vw , 1.25rem );
+    font-size: clamp( 0.75rem , 0.5681818182rem  +  0.9090909091vw , 1.25rem );
   }
 }
 
-@supports not (font-size: clamp( 0.875rem , 0.7386363636rem  +  0.6818181818vw , 1.25rem )) {
+@supports not (font-size: clamp( 0.75rem , 0.5681818182rem  +  0.9090909091vw , 1.25rem )) {
   .hero__contact p {
-    font-size: calc(0.875rem + 0.375 * (100vw - 20rem) / 55);
+    font-size: calc(0.75rem + 0.5 * (100vw - 20rem) / 55);
   }
 }
 
@@ -533,40 +529,8 @@ body {
 }
 
 @media (max-height: 29.99875em) {
-  .hero__name {
-    font-size: 1.125rem !important;
-  }
-
-  .hero__job {
-    font-size: 0.875rem !important;
-  }
-
-  .hero__contact h2 {
-    font-size: 1rem !important;
-  }
-
-  .hero__contact p {
-    font-size: 0.875rem !important;
-  }
-
   .slider-hero__portfolio {
     font-size: 1.25rem !important;
-  }
-
-  .swiper-slide {
-    width: 40%;
-  }
-}
-
-@media (max-height: 79.25em) {
-  .swiper-slide {
-    width: 60%;
-  }
-}
-
-@media (max-height: 61.99875em) {
-  .swiper-slide {
-    width: 50%;
   }
 }
 

@@ -3337,6 +3337,7 @@
             }));
         }
     }), 0);
+    screen.orientation.lock();
     const mouse = document.querySelector(".mouse");
     const links = document.querySelectorAll("a");
     mouse.style.opacity = 0;
